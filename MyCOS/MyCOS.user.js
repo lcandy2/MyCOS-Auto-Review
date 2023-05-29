@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MyCOS 自动评教
 // @namespace    https://github.com/lcandy2
-// @version      1.2
+// @version      1.3
 // @description  自动完成评教，适用于所有采用 MyCOS / 麦可思 （评教系统左上角有MyCOS或M标识）系统的高校或其他单位。
 // @match        *://*/*
 // @homepage     https://github.com/lcandy2/MyCOS
