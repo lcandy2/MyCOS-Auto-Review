@@ -1,5 +1,7 @@
 # MyCOS / 麦可思 自动评教脚本
 
+<p align="center"><a href="https://github.com/lcandy2/MyCOS"><strong>Chrome extension 浏览器拓展版</strong></a></p>
+
 这是一个能够自动进行 MyCOS / 麦可思 课程评教的脚本。通过该脚本，您可以自动完成课程评价、选择单选题答案、勾选多选题选项，并填写文本题答案。同时，您还可以根据个人喜好自定义评教内容。
 
 ## 功能特点
