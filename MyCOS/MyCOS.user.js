@@ -2,7 +2,7 @@
 // @name         MyCOS 自动评教
 // @namespace    https://github.com/lcandy2
 // @version      1.1
-// @description  自动完成评教功能，适用于所有采用MyCOS（评教系统左上角有MyCOS或M标识）系统的高校或其他单位。
+// @description  自动完成评教，适用于所有采用 MyCOS / 麦可思 （评教系统左上角有MyCOS或M标识）系统的高校或其他单位。
 // @match        *://*/*
 // @homepage     https://github.com/lcandy2/MyCOS
 // @run-at       document-end
@@ -13,9 +13,9 @@
   'use strict';
 
   let comment = "我对本课程非常满意。"; // 评价内容
-  let radioSelection = [0, 1, 2]; // 0: 非常同意，1: 同意，2: 一般，3: 不同意，4: 非常不同意
+  let radioSelection = [0, 1]; // 0: 非常同意，1: 同意，2: 一般，3: 不同意，4: 非常不同意
   let checkboxSelection = 1; // 要全选所有多选题，请将此值改为1，否则请将此值改为0
-  let autoSubmission = 0; // 要自动提交，请将此值改为1，否则请将此值改为0
+  let autoSubmission = 1; // 要自动提交，请将此值改为1，否则请将此值改为0
   let fillComment = 1; // 要填写评价，请将此值改为1，否则请将此值改为0
 
   // 以下代码请勿修改
