@@ -16,7 +16,8 @@
 1. 通过浏览器拓展商店安装：
 [![在Chrome网上应用商店获取](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/milknmmfmlfhifcmbpbgbeoccogaaogk?hl=zh-CN)
 <a href="https://microsoftedge.microsoft.com/addons/detail/	gfpggjainpageinfcghkchajpljlpgaj?hl=zh-CN" target="_blank"><img src='https://user-images.githubusercontent.com/72879799/229780441-610f727a-edb4-41e0-a1fb-6593af3d4485.svg' alt='从 Microsoft 外接程序获取' style='height: 58px;'/></a>
-[<img src='https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png' alt='Get the add-on' style='height: 59px;'/>](https://addons.mozilla.org/firefox/addon/select-like-a-boss/)
+
+* 请注意，本插件仅支持Chrome、Edge以及其他基于Chromium内核的浏览器。对于Firefox等其他浏览器，请使用<a href="https://github.com/lcandy2/MyCOS/tree/main/MyCOS"><strong>User Script 油猴脚本版</strong></a></p>
 
 2. 手动安装，从[release](https://github.com/lcandy2/MyCOS/releases)中下载crx或zip文件，解压后，打开浏览器的拓展程序页面，将解压后的文件夹拖入浏览器中即可。
 
