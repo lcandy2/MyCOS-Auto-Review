@@ -160,6 +160,10 @@
     if (nextTeacherButton) {
       nextTeacherButton.click();
       appendLog('已自动切换下一课程/教师');
+      appendLog('准备开始评教，等待2秒...', 'salmon');
+      setTimeout(() => {
+        executeMyCOS();
+      }, 1500);
     } else {
       appendLog('未找到切换按钮，请手动点击切换', 'firebrick');
     }
