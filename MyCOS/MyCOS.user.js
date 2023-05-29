@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MyCOS 自动评教
 // @namespace    https://github.com/lcandy2
-// @version      1.1
+// @version      1.2
 // @description  自动完成评教，适用于所有采用 MyCOS / 麦可思 （评教系统左上角有MyCOS或M标识）系统的高校或其他单位。
 // @match        *://*/*
 // @homepage     https://github.com/lcandy2/MyCOS
@@ -186,7 +186,7 @@
         nextTeacher();
       }, 2000);
     } else { appendLog('自动提交功能已由用户关闭。', 'grey'); }
-    appendLog('已完成《' + $("h1").text() + '》！\n', 'green');
+    appendLog('已完成《' + $("h1").text() + '》！\n若已完成全部评教任务，为避免与其他网站冲突，请及时禁用本脚本', 'green');
   }
 
   let logWindow = document.createElement('div');
