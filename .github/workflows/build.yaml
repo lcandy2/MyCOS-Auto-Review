@@ -1,0 +1,71 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use pnpm
+        uses: pnpm/action-setup@v2.4.0
+        with:
+          version: '8'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Commit and push
+        uses: actions-js/push@v1.4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: 'action: build script'
+
+      - name: Format dist files
+        run: |
+          mkdir export
+          cp README.md ./export/MyCOS-Auto-Review.md
+          cp ./dist/mycos-auto-review.user.js ./export/MyCOS-Auto-Review.user.js
+          cp ./LICENSE ./export/MyCOS-Auto-Review.LICENSE
+          mkdir export/assests
+          cp -r ./assests/ ./export/assests/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: mycos-auto-review
+          path: ./export/
+
+  push-to-userjs:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout user.js repository
+        uses: actions/checkout@v4
+        with:
+          repository: lcandy2/user.js
+          token: ${{ secrets.ACCESS_TOKEN }} # Make sure to set this in your repo secrets
+          path: ./export/user-js
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: mycos-auto-review
+          path: ./export/user-js/mycospxk.com
+
+      - name: Commit and push to user.js
+        uses: actions-js/push@v1.4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository: lcandy2/user.js
+          directory: ./export/user-js
+          message: 'action: Update MyCOS-Auto-Review'
