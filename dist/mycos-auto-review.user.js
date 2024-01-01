@@ -3,7 +3,7 @@
 // @namespace    https://github.com/lcandy2/MyCOS-Auto-Review
 // @version      2.0.1
 // @author       lcandy2
-// @description  一键评教，自动完成课程评价，支持单选、多选、文本评价。支持仅填充评价和填充并提交评价两种模式。
+// @description  一键评教，自动完成课程评价，支持单选、多选、文本评价。支持仅填充评价和填充并提交评价两种模式。适用于所有采用 MyCOS / 麦可思 （评教系统左上角有MyCOS或M标识）系统的高校或其他单位。
 // @license      MIT
 // @icon         http://www.mycos.com.cn/Uploads/icopic/54a0fcc38f623.ico
 // @match        *://*.edu.cn/*
